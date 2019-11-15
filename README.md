@@ -5,7 +5,7 @@ De Microservice race gaan we gebruiken voor het bewaren van gegevens van de vers
 
 ## Gegevens
 
-In de Raceservice zullen we de volgende gegevens bijhouden:
+In de Raceservice zullen we de volgende parameters gaan opslaan:
 
 ```bash
 id
