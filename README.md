@@ -1,11 +1,11 @@
-# race Microservice
+# Race Microservice :dragon:
 
-De Microservice race gaan we gebruiken voor het bewaren van gegevens van een race.
+De Microservice race gaan we gebruiken voor het bewaren van gegevens van de verschillende rassen.
 
 
-## Parameters
+## Gegevens
 
-In de character-info zullen we de volgende parameters gaan opslaan:
+In de Raceservice zullen we de volgende gegevens bijhouden:
 
 ```bash
 id
@@ -18,7 +18,7 @@ abilityBonuses
 
 ## Andere services
 
-### Mircoservices
+### Microservices
 
 #### player-info
 [player-info](https://github.com/DinVanwezemael/DungeonsAndDragons-PlayerInfo)
@@ -33,5 +33,5 @@ abilityBonuses
 [Edge Service](https://github.com/maartenschroons/D-D-edge-service)
 #### Eureka Service
 [Eureka Service](https://github.com/DinVanwezemael/DungeonsAndDragons-EurekaServer)
-#### Zull Gateway
+#### Zuul Gateway
 [Zuul Gateway](https://github.com/JelleVLD/ZuulGateway)
