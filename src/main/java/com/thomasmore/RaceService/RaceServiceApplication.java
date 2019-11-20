@@ -1,17 +1,11 @@
 package com.thomasmore.RaceService;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
-
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Arrays;
 import java.util.List;
@@ -30,14 +24,14 @@ public class RaceServiceApplication {
 	@RequestMapping(value = "/")
 	public String home() {
 		log.info("Access /(niets dus hi)");
-		return "Hi!ssss";
+		return "Hi!ssss8001";
 	}
 
 	@RequestMapping(value = "/greeting")
 	public String greet() {
 		log.info("Access /greeting");
 
-		List<String> greetings = Arrays.asList("Hi there", "Greetings", "Salutations");
+		List<String> greetings = Arrays.asList("Hi there8001", "Greetings8001", "Salutations8001");
 		Random rand = new Random();
 
 		int randomNum = rand.nextInt(greetings.size());
