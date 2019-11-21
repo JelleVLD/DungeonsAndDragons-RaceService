@@ -18,8 +18,10 @@ public interface RaceRepository extends MongoRepository<Race, String> {
 //    Race findRaceByRaceid(@Param("raceid") Integer raceId);
     List<Race> findRacesBySpeed(@Param("speed") Integer speed);
     List<Race> findRacesBySize(@Param("size") String size);
+    Race findRacesByName(@Param("name") String name);
 
 }
 
 // http://localhost:8001/races/search/findRacesBySpeed?speed=30
 // http://localhost:8001/races/search/findRacesBySize?size=medium
+// http://localhost:8001/races/search/findRacesByName?name=Dwarf
