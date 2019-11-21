@@ -7,14 +7,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 
 @Data
-@Document(collection = "Race")
-
+@Document(collection = "race")
 public class Race {
     @Id
     private String id;
     private String name;
-    private String speed;
-    private String alignment;
+    private int speed;
     private String size;
     private String abilityBonuses;
 }
