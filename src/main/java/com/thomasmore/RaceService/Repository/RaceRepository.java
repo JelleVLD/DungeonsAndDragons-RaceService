@@ -6,7 +6,6 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
-import java.util.Optional;
 
 @CrossOrigin
 public interface RaceRepository extends MongoRepository<Race, String> {
@@ -15,6 +14,8 @@ public interface RaceRepository extends MongoRepository<Race, String> {
     List<Race> findRacesBySize(@Param("size") String size);
     Race findRacesByName(@Param("name") String name);
     Race findRacesById(@Param("id") String id);
+    List<Race> findByNameNotNull();
+
 
 }
 
@@ -22,3 +23,4 @@ public interface RaceRepository extends MongoRepository<Race, String> {
 // http://localhost:8001/races/search/findRacesBySize?size=medium
 // http://localhost:8001/races/search/findRacesByName?name=Dwarf
 // http://localhost:8001/races/search/findRacesById?id=5dd6737d1c9d4400008a5a40
+// http://localhost:8001/races/search/findByNameNotNull
