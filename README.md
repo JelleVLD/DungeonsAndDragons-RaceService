@@ -15,6 +15,8 @@ size
 abilityBonuses
 ```
 
+# Algemeen
+
 ## Thema
 Onze applicatie zal spelers van het spel Dungeons and Dragons de mogelijkheid geven om een overzicht te geven van de bestaande characters in het spel. We geven spelers ook de mogelijk om zelf een character aan te maken. zo kunnen ze makkeijk kiezen uit alle bestaande Classes, Races en Alignments.
 
